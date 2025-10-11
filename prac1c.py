@@ -1,4 +1,4 @@
-def TextEncryption(text, key):
+def StringEncryption(text, key):
     cipherText = ""
     cipher = []
     for i in range(len(key)):
@@ -11,4 +11,5 @@ plainText = "HelloTYCS"
 key = "MONEYBANK"
 encryptedText = StringEncryption(plainText.upper(), key.upper())
 print("cipherText: ", encryptedText)
+
 
