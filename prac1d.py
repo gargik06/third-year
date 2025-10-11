@@ -1,13 +1,14 @@
-string = input("Enter a string: ")
+text = input("Enter a Text: ")
 
 def RailFence(text):
     result = ""
-    for i in range(len(string)):
+    for i in range(len(text)):
         if(i % 2 == 0):
-            result += string[i]
-    for i in range(len(string)):
+            result += text[i]
+    for i in range(len(text)):
         if(i % 2 != 0):
-            result += string[i]
+            result += text[i]
     return result
 
-print(RailFence(string))
+print(RailFence(text))
+
