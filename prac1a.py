@@ -10,7 +10,7 @@ def ceaser_encrypt(text, n):
     return ans
 
 def ceaser_decrypt(cipher, n):
-    return ceaser_encrypt(text, -n)
+    return ceaser_encrypt(cipher, -n)
 
 if __name__ == "__main__":
     text = input("Enter the text to encrypt: ")
@@ -18,3 +18,4 @@ if __name__ == "__main__":
     encrypted = ceaser_encrypt(text, n)
     print("Encrypted text: ", encrypted)
     print("Decrypted text: ", ceaser_decrypt(encrypted, n))
+
